@@ -1,0 +1,105 @@
+//#define _CRT_SECURE_NO_WARNINGS 1
+//#include<stdio.h>
+//
+//int main()
+//{
+//	int a = 1;
+//	while(a<=100)
+//	{
+//		if (a % 3 == 0)
+//			printf("%d ", a);
+//		a++;
+//	}
+//	return 0;
+//}
+//
+//
+//
+//求100以内3的倍数
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
+//int main()
+//{
+//	int a, b, c, sum;
+//	scanf("%d%d%d", &a, &b, &c);
+//	if (b > a)
+//	{
+//		sum = b;
+//		b = a;
+//		a = sum;
+//	}
+//	if (c > a)
+//	{
+//		sum = c;
+//		c = a;
+//		a = sum;
+//	}
+//	if (c > b)
+//	{
+//		sum = c;
+//		c = b;
+//		b = sum;
+//	}
+//	printf("%d %d %d\n", a, b, c);
+//	return 0;
+//排序数字
+//
+//}
+//
+
+
+
+
+//
+//int = ();
+//int = ();
+//float = ();
+
+
+	/*	printf("%f\n", f);*/
+
+//printf("%d\n", a);
+//scanf("");
