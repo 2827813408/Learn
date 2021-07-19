@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+    int arr[] = { 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15};
+    int i, j, t;
+    for (i = 0; i < 14; i++)
+    {
+        for (j = 0; j < 14 - i; j++)
+        {
+            if (arr[j] > arr[j + 1])
+            {
+                t = arr[j + 1];
+                arr[j + 1] = arr[j];
+                arr[j] = t;
+            }
+        }
+    }
+    printf("MAX最大值等于%d\n", arr[14]);
+    system("pause");
+    return 0;
+}
+
