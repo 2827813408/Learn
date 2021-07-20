@@ -1,0 +1,63 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+#include<windows.h>
+
+int main()
+{
+    int start = 1;
+    while (start)
+    {
+        printf("请选择：\n");
+        printf("*******************\n");
+        printf("**** 1 PLAY ****\n");
+        printf("**** 0 XEIT ****\n");
+        printf("*******************\n");
+        scanf_s("%d", &start);
+        switch (start)
+        {
+        case 1:
+        {      int random;
+        int input;
+        printf("*****游戏开始*****\n");
+        srand((unsigned)time(NULL));
+        random = rand() % 100;
+        input = 0;
+        while (1)
+        {
+            printf("猜个数：\n");
+            scanf("%d", &input);
+            if (input > random)
+            {
+                printf("猜大了\n");
+            }
+            else if (input < random)
+            {
+                printf("猜小了\n");
+            }
+            else
+            {
+                printf("猜对了！\n");
+                printf("恭喜您！\n");
+                Sleep(1000);
+                printf("\n\n");
+                break;
+            }
+        }
+        break;
+        }
+        case 0:
+        {
+            return 0;
+        }
+        default:
+        {
+            printf("选择错误\n");
+            break;
+        }
+        }
+    }
+    return 0;
+
