@@ -1,0 +1,22 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+
+
+#include<stdio.h>
+#include<malloc.h>
+
+int Strlen(char* str)
+{
+	if (*str != '\0')
+		return 1 + Strlen(str + 1);//str++
+	else
+		return 0;
+}
+
+int main()
+{
+	char arr[] = "abcefghijk";
+	int len = Strlen(arr);
+	printf("%d\n", len);
+
+	return 0;
+}
