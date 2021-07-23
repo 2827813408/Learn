@@ -1,0 +1,16 @@
+
+#include<stdio.h>
+#include<malloc.h>
+
+void reverse_string(char* string) {
+	if ('\0' != *(++string)) {
+		reverse_string(string);
+	}
+	printf("%c", *(string - 1));
+}
+int main() {
+	char* a = "abcdef";
+	reverse_string(a);
+	printf("\n");
+	return 0;
+}
