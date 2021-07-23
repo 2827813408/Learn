@@ -1,0 +1,20 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+#include<malloc.h>
+void print(int n)
+{
+    if (n > 9)
+    {
+        print(n / 10);
+    }
+    printf("%-4d", n % 10);
+}
+int main()
+{
+    int number;
+    printf("输入要打印数\n");
+    scanf("%d", &number);
+    print(number);
+    system("pause");
+    return 0;
+}
